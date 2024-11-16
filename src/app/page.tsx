@@ -430,7 +430,7 @@ export default function Home() {
                     >
                       {/* Top Section */}
                       <div className="flex flex-col items-center">
-                        <div className="flex justify-center items-center  rounded-full object-cover bg-[#f0f4f8]">
+                        <div className="flex justify-center items-center  rounded-full object-cover ">
                           <GupttaIcon />
                         </div>
                         <h3 className="text-gray-800 font-extrabold text-lg leading-7">
