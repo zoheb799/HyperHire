@@ -16,10 +16,6 @@ interface CardData {
   id: string;
   name: string;
   title: string;
-  experience: string;
-  skills: string[];
-  imageUrl: string;
-  countryFlag?: string;
 }
 const fadeIn = {
   hidden: { opacity: 0 },
@@ -28,37 +24,25 @@ const fadeIn = {
 const userData: CardData[] = [
   {
     id: "1",
-    name: "John Doe",
-    title: "Full Stack Developer",
-    experience: "5 years",
-    skills: ["JavaScript", "React", "Node.js", "MongoDB"],
-    imageUrl: "/images/gupta.png",
-    countryFlag: "/images/usa_flag.png",
+    name: "Abhishek Gupta",
+    title: "마케팅.2y+",
   },
   {
     id: "2",
-    name: "Jane Smith",
-    title: "Backend Developer",
-    experience: "3 years",
-    skills: ["Python", "Django", "PostgreSQL"],
-    imageUrl: "/images/gupta.png",
-    countryFlag: "/images/uk_flag.png",
+    name: "Abhishek Gupta",
+    title: "마케팅.2y+",
   },
   {
     id: "3",
-    name: "Jane Smith",
-    title: "Backend Developer",
-    experience: "3 years",
-    skills: ["Python", "Django", "PostgreSQL"],
-    imageUrl: "/images/gupta.png",
-    countryFlag: "/images/uk_flag.png",
+    name: "Abhishek Gupta",
+    title: "마케팅.2y+",
   },
 ];
 const languageSkills = [
-  "한국어 능력 1",
-  "한국어 능력 2",
-  "한국어 능력 3",
-  "한국어 능력 4",
+  "한국어 능력",
+  "업무 수행 능력",
+  "겸업 여부",
+  "평판 조회",
 ];
 
 export default function Home() {
@@ -485,10 +469,10 @@ export default function Home() {
             {languageSkills.map((skill, index) => (
               <motion.div
                 key={index}
-                className={`flex justify-center items-center gap-2 h-6`}
+                className={`flex justify-start items-start gap-2 h-6`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 0.4 + index * 0.2, duration: 0.5 }} // Adding staggered delay for each item
+                transition={{ delay: 0.4 + index * 0.2, duration: 0.5 }}
               >
                 <div className="bg-[#E8ECFF] rounded-md">
                   <CorrectIcon />
