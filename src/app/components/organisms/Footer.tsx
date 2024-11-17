@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className="bg-[#FBFBFB] py-10 px-6 text-gray-700">
-      <div className="max-w-7xl mx-auto space-y-10">
+      <div className="max-w-7xl mx-auto space-y-10 p-5">
         {/* Logo and Contact Information */}
         <div className="flex flex-col lg:flex-row lg:justify-between gap-8 items-start">
           {/* Logo Section */}
