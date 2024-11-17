@@ -465,7 +465,7 @@ export default function Home() {
             </motion.button>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 pt-44 pr-24">
+          <div className="grid grid-cols-2 space-y-1 pt-44 pr-24">
             {languageSkills.map((skill, index) => (
               <motion.div
                 key={index}
@@ -474,23 +474,25 @@ export default function Home() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 + index * 0.2, duration: 0.5 }}
               >
-                <div className="bg-[#E8ECFF] rounded-md">
+                <div className="bg-[#E8ECFF] rounded-md h-5 w-5 flex items-center justify-center">
                   <CorrectIcon />
                 </div>
-                <p className="text-base font-black leading-6 text-[#FFFFFF]">{skill}</p>
+
+                <p className="text-base font-black leading-6 text-[#FFFFFF]">
+                  {skill}
+                </p>
               </motion.div>
             ))}
-            
           </div>
           <motion.a
-              href="#"
-              className="py-3 text-[#FBFF23] font-semibold rounded-md underline pr-44"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-            >
-              개발자가 필요하신가요?
-            </motion.a>
+            href="#"
+            className="py-3 text-[#FBFF23] font-semibold  underline pr-44"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+          >
+            개발자가 필요하신가요?
+          </motion.a>
         </div>
       </div>
     </div>
